@@ -1,0 +1,270 @@
+{% ifequal LANGUAGE_CODE 'it' %}
+
+<ul id="tablist"> 
+<li><a href="#" class="current" onClick="return expandcontent('sc1', this)">Voli</a></li> 
+<li><a href="#" onClick="return expandcontent('sc2', this)" >Auto</a></li> 
+</ul> 
+ 
+<DIV id="tabcontentcontainer"> 
+ 
+<div id="sc1" class="tabcontent"> 
+<!--motore di ricerca VOLI--> 
+<div id="motore" width="292"> 
+<script type="text/javascript" src="http://www.promozioni.opodo.it/motorevoli/quickSearch.js"></script> 
+<script type="text/javascript" src="http://promos.opodo.co.uk/travel/skins/default/js/loclist.js"></script> 
+<script type="text/javascript" src="http://promos.opodo.co.uk/travel/skins/default/js/autocomplete3.js"></script> 
+<link href="http://promos.opodo.co.uk/travel/skins/default/css/htmlbanners.css" rel="styleSheet" type="text/css" /> 
+<script> 
+    var ajaxBox_offsetX = 0;
+    var ajaxBox_offsetY = 0;
+    var minimumLettersBeforeLookup = 4; // Minimum number of letters before lookup airport/city names
+    var allowLevenshteinDistance = 2;   // allow use of Levenshtein distance for correcting typos, set the maximum allowed distance, or 0 to disable
+    var submitform = false;
+</script> 
+<div id="OpodoQuickFlightSearch" style="height:auto; background-color:#ebf8c3; border: 0px solid #CCCCCC;"> 
+        <form name="flightSearch" onSubmit="return flightSearchSubmit();" action="http://www.opodo.it/opodo/StrutsServlet/AeroSearchFlights" method="post" target="_blank"> 
+        <input type="hidden" id="departureAirport_hidden" name="departureAirportCode" value=""> 
+        <input type="hidden" id="arrivalAirport_hidden" name="arrivalAirportCode" value=""> 
+        <input type="hidden" name="TripType" value="R" /> 
+        <input type="hidden" name="departureTime" value="ANY" /> 
+        <input type="hidden" name="returnTime" value="ANY" /> 
+        <input type="hidden" name="cabinType" value="E" /> 
+        <input type="hidden" name="CMP" value="it-aff-fl-000010" /> 
+        <input type="hidden" name="preferredAirlines[1]" value="" /> 
+        <div style="margin:0px 0 0 0;margin-right:30px; padding-top:20px;"> 
+ 
+            <label for="departureAirport" id="cityDepart" style="margin: 0 1em 0 1em; width: 15px;">Da</label> 
+            <input autocomplete="off" onclick="this.select();" style="width: 200px;" type="text" name="departureAirport" id="departureAirport" value="" onkeyup="ajax_showOptions(this,'locname',event);" /> 
+ 
+            <br /> 
+            <label for="destinationAirport" id="cityArrive" style="margin: 0 1em 0 1em; width: 15px;">A</label> 
+            <input autocomplete="off" onclick="this.select();" style="width: 200px; margin-top:3px;" type="text" name="arrivalAirport" id="arrivalAirport" value="" onkeyup="ajax_showOptions(this,'locname',event);" /> 
+                                                                                                                                
+        </div> 
+        <br /> 
+ 
+<div style="margin:20px 0 0 0;margin-right:30px"> 
+ 
+                    <!-- Departing --> 
+                    <label for="departureDay" style="width: 63px;">Andata</label> 
+                    <select style="width:40px; margin-right:2px; text-align:center;" name="departureDay" id="departureDay" onchange="changeDate(document.flightSearch.departureMonth, document.flightSearch.departureDay, document.flightSearch.returnMonth, document.flightSearch.returnDay, 1);"> 
+                    <script type="text/javascript"> 
+                                for (d=1;d<32;d++) document.write("<option value=\""+((d<10)?"0"+d:d)+"\">"+d+"</option>");
+                                        </script> 
+                                </select> 
+                                <select style="width:80px;" name="departureMonth" onchange="changeDate(document.flightSearch.departureMonth, document.flightSearch.departureDay, document.flightSearch.returnMonth, document.flightSearch.returnDay, 1);"> 
+                                        <script type="text/javascript"> 
+                                                var rightnow = new Date();
+                                                for (var i=0;i<12;i++) document.write(months[(rightnow.getMonth() + i) % 12].option);
+                                        </script> 
+                                </select> 
+ 
+                                <br /> 
+ 
+                                <!-- Returning --> 
+                                <label for="returnDay" style="width: 63px;">Ritorno</label> 
+ 
+                                <select style="width:40px; margin-right:2px; text-align:center;" name="returnDay" id="returnDay" onchange="changeDate( document.flightSearch.returnMonth, document.flightSearch.returnDay,document.flightSearch.departureMonth, document.flightSearch.departureDay, -1);"> 
+                                        <script type="text/javascript"> 
+                                                for (d=1;d<32;d++) document.write("<option value=\""+((d<10)?"0"+d:d)+"\">"+d+"</option>");
+                                        </script> 
+                                </select> 
+                                <select style="width:80px;" name="returnMonth" onchange="changeDate( document.flightSearch.returnMonth, document.flightSearch.returnDay,document.flightSearch.departureMonth, document.flightSearch.departureDay, -1);"> 
+                                        <script type="text/javascript"> 
+                                                var rightnow = new Date();
+                                                for (var i=0;i<12;i++) document.write(months[(rightnow.getMonth() + i) % 12].option);
+                                        </script> 
+                                </select> 
+ 
+        
+        </div> 
+                
+        <div style="text-align: right; padding-right:10px;margin-top:10px;"> 
+            <img src="http://www.promozioni.opodo.it/icone_pulsanti/search_b.gif" value="Search" name="Search" onclick="flightPrepSubmit();" style="cursor: hand;margin-top:30px;"/><br>&nbsp;
+        </div> 
+        
+        
+        </form> 
+ 
+ 
+</div> 
+ 
+<script type="text/javascript"> 
+        window.onload = initFlights;
+</script> 
+</div> 
+</div> 
+ <div id="sc2" class="tabcontent"> 
+ 
+ 
+ <div id="motore" > 
+<script type="text/javascript" src="http://www.promozioni.opodo.it/motorevoli/quickSearch.js"></script> 
+<script type="text/javascript" src="http://promos.opodo.co.uk/travel/skins/default/js/loclist.js"></script> 
+<script type="text/javascript" src="http://promos.opodo.co.uk/travel/skins/default/js/autocomplete3.js"></script> 
+<link href="http://promos.opodo.co.uk/travel/skins/default/css/htmlbanners.css" rel="styleSheet" type="text/css" /> 
+<script> 
+    var ajaxBox_offsetX = 0;
+    var ajaxBox_offsetY = 0;
+    var minimumLettersBeforeLookup = 4; // Minimum number of letters before lookup airport/city names
+    var allowLevenshteinDistance = 2;   // allow use of Levenshtein distance for correcting typos, set the maximum allowed distance, or 0 to disable
+    var submitform = false;
+</script> 
+                    
+ 
+<div id="OpodoQuickFlightSearch" style="height:auto; background-image:url(images/motore_bkg.jpg);background-repeat:no-repeat; border: 0px solid #CCCCCC;"> 
+ 
+ 
+ 
+        <form name="carSearchFormBean" method="post" action="http://www.opodo.it/opodo/StrutsServlet/CarSearch" onsubmit="return validateForm();" target="_blank"> 
+                                                        <input type="hidden" value="" name="CMP" id="CMP" /> 
+                                                        <input type="hidden" name="Mkt_Id" value="1" id="Mkt_Id" /> 
+                                                        <input type="hidden" name="WLS_ID" value="" id="WLS_ID" /> 
+                                                        <input type="hidden" name="searchType" value="car" /> 
+                                                        <input type="hidden" name="Mkt_Id" /> 
+                                                        <input type="hidden" name="isAdvancedSearch" value="0" /> 
+                                                        <input type="hidden" name="pickUpDateForm" /> 
+                                                        <input type="hidden" name="dropOffDateForm" /> 
+                                                        <input type="hidden" name="destination1" /> 
+                                                        <input type="hidden" name="destination2" /> 
+                                                        <input type="hidden" name="affiliationCode" /> 
+                                                        <input type="hidden" name="childSeat" value="0" /> 
+                                                        <input type="hidden" name="airConditioning" value="0" /> 
+                                                        <input type="hidden" name="transmission" value="0" /> 
+                                                        <input type="hidden" name="flightCode" /> 
+                                                        <input type="hidden" name="pickHour" value="12" /> 
+                                                        <input type="hidden" name="dropHour" value="12" /> 
+                
+        <div style="margin:0px 30px 0 30px; padding-top:20px;"> 
+ 
+           <!-- divers age --> 
+                                                        <label for="age" id="driverAge">Et&agrave; del conducente</label> 
+                                                        <select name="age" id="age" style="width:120px;"> 
+                                                        <option value="0">Seleziona</option> 
+                                                        <option value="23">23</option> 
+                                                        <option value="24">24</option> 
+                                                        <option value="25">25</option> 
+                                                        <option value="26">26</option> 
+                                                        <option value="27">27</option> 
+                                                        <option value="28">28</option> 
+                                                        <option value="29">29</option> 
+                                                        <option value="30">30</option> 
+                                                        <option value="31">31</option> 
+                                                        <option value="32">32</option> 
+                                                        <option value="33">33</option> 
+                                                        <option value="34">34</option> 
+                                                        <option value="35">35</option> 
+                                                        <option value="36">36</option> 
+                                                        <option value="37">37</option> 
+                                                        <option value="38">38</option> 
+                                                        <option value="39">39</option> 
+                                                        <option value="40">40</option> 
+                                                        <option value="41">41</option> 
+                                                        <option value="42">42</option> 
+                                                        <option value="43">43</option> 
+                                                        <option value="44">44</option> 
+                                                        <option value="45">45</option> 
+                                                        <option value="46">46</option> 
+                                                        <option value="47">47</option> 
+                                                        <option value="48">48</option> 
+                                                        <option value="49">49</option> 
+                                                        <option value="50">50</option> 
+                                                        <option value="51">51</option> 
+                                                        <option value="52">52</option> 
+                                                        <option value="53">53</option> 
+                                                        <option value="54">54</option> 
+                                                        <option value="55">55</option> 
+                                                        <option value="56">56</option> 
+                                                        <option value="57">57</option> 
+                                                        <option value="58">58</option> 
+                                                        <option value="59">59</option> 
+                                                        <option value="60">60</option> 
+                                                        <option value="61">61</option> 
+                                                        <option value="62">62</option> 
+                                                        <option value="63">63</option> 
+                                                        <option value="64">64</option> 
+                                                        <option value="65">65</option> 
+                                                        <option value="66">66</option> 
+                                                        <option value="67">67</option> 
+                                                        <option value="68">68</option> 
+                                                        <option value="69">69</option> 
+                                                        <option value="70">70</option> 
+                                                        <option value="71">71</option> 
+                                                        <option value="72">72</option> 
+                                                        <option value="73">73</option> 
+                                                        <option value="74">74</option> 
+                                                        </select><br /> 
+                                                
+                                                                                                                                
+        </div> 
+        <br /> 
+ 
+<div style="margin:20px 30px 0 30px;"> 
+<label for="searchString" id="pickupDest">Localit&agrave; ritiro</label> 
+                                                <input type="text" style="font-size:11px;font-family: Verdana, Arial, Helvetica, sans-serif; width:120px;" name="searchString" id="searchString" value="Citt&agrave; o aeroporto" onclick="this.value='';" onchange="setPickLoc();" /> 
+                                    <br /> 
+                                                        
+                                                        <!-- Pick up date --> 
+                                                        <label for="pickDate" id="outboundDate">Data ritiro</label> 
+ 
+                                                        <select style="width:40px; margin-right:1px; text-align:center;" name="pickDate" id="pickDate"> 
+                                                                <script type="text/javascript"> 
+                                                                        for (d=1;d<32;d++) document.write("<option value=\""+d+"\">"+d+"</option>");
+                                                                </script> 
+                                                        </select> 
+                                                        <select style="width:75px; margin-left:0;" name="pickMonth" onchange="changeDate(document.carSearchFormBean.pickMonth, document.carSearchFormBean.pickDate);"> 
+                                                                <script type="text/javascript"> 
+                                                                        var rightnow = new Date();
+                                                                        for (var i=0;i<12;i++) document.write(months[(rightnow.getMonth() + i) % 12].option);
+                                                                </script> 
+                                                        </select> 
+        
+        </div> 
+        
+        <br /> 
+ 
+<div style="margin:20px 30px 0 30px;"> 
+<!-- drop off destination --> 
+                                                        <label for="searchStringDrop">Localit&agrave; consegna</label> 
+                                                        <input type="text" style="font-size:11px;font-family: Verdana, Arial, Helvetica, sans-serif;width:110px;" name="searchStringDrop" id="searchStringDrop" value="La stessa del ritiro" onclick="this.value='';" onchange="setDropLoc();" /><br /> 
+                                                        
+                                                        <!-- drop off date--> 
+                                                        <label for="dropDate" id="returnDate">Data consegna</label> 
+ 
+                                                        <select style="width:40px; margin-right:1px; text-align:center;" name="dropDate" id="dropDate"> 
+                                                                <script type="text/javascript"> 
+                                                                        for (d=1;d<32;d++) document.write("<option value=\""+d+"\">"+d+"</option>");
+                                                                </script> 
+                                                        </select> 
+                                                        <select style="width:75px; margin-left:0;" name="dropMonth" onchange="changeDate(document.carSearchFormBean.dropMonth, document.carSearchFormBean.dropDate);"> 
+                                                                <script type="text/javascript"> 
+                                                                        var rightnow = new Date();
+                                                                        for (var i=0;i<12;i++) document.write(months[(rightnow.getMonth() + i) % 12].option);
+                                                                </script> 
+                                                        </select> 
+        
+        </div> 
+                <br> 
+    <div width="100%" height="50" style="text-align: right; padding-right:10px;margin-top:10px;"> 
+       <input type="image" src="http://www.promozioni.opodo.it/icone_pulsanti/search_b.gif"  value="Search" name="Search" style="float:right; border:0px solid #000000;"/><br>&nbsp;
+    </div> 
+    
+        </form> 
+ 
+        
+</div> 
+ 
+<script type="text/javascript"> 
+        window.onload = initCars;
+</script> 
+</div> 
+
+ </div> 
+ 
+</DIV> 
+ 
+{% else %}
+
+<iframe width="295" scrolling="No" height="415" frameborder="0" src="http://promos.opodo.co.uk/promos/static/html/awTest_searchbox.html?aid=102411">
+</iframe>
+
+{% endifequal %}

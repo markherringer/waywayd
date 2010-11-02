@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load openid_tags %}
+{% load ifsetting_tag %}
+
+{% block extra_head_base %}
+    {% block extra_head %}{% endblock %}
+{% endblock %}
+
+{% block logo_link_image %}<a href="{% url home %}"><span>Cittadelcapo</span></a>
+
+{% endblock %}
+
+{% block locale_switcher %}
+        <div class="langContainer">
+    	    <!-- set language -->
+            {% if flatpage %}
+            <form action="/i18n/setlang/?next=/" method="post" id="locale_switcher" style="display: inline;">
+            {% else %}
+            <form action="/i18n/setlang/?next={{ request.path }}" method="post" id="locale_switcher" style="display: inline;">
+            {% endif %}
+                <select name="language" onchange="$('#locale_switcher').submit()" class="selectmenu">
+                    {% for lang in LANGUAGES %}
+                        <option value="{{ lang.0 }}"{% ifequal lang.0 LANGUAGE_CODE %} selected="selected"{% endifequal %}>{{ lang.1 }}</option>
+                    {% endfor %}
+                </select>
+            </form>
+        </div>
+{% endblock %}
+
+{% block topnav %}
+        <!-- top nav -->
+        <ul class="topnav">
+            <li><a href="/sitemap.xml">{% trans "Site map" %}</a></li>
+            {% comment %}
+            <li><a href="/feedback">{% trans "Feedback" %}</a></li>
+            <li><a href="/contact">{% trans "Contact Us" %}</a></li>
+            {% endcomment %}
+        </ul>
+{% endblock %}
+
+{% block globalnav %}
+<!-- global nav -->
+        <ul class="globalnav">
+            <li id="tab_areas" class="active"><a href="{% url area_list %}">{% trans "Cape Town" %}</a></li>
+            {% comment %}
+            <li id="tab_south_africa" {% ifequal tab_active "tab_south_africa" %}class="active"{% endifequal %}><a href="{% url area_list %}">{% trans "South Africa" %}</a></li>
+            <li id="tab_hotels" {% ifequal tab_active "tab_hotels" %}class="active"{% endifequal %}><a href="{% url hotel_list %}">{% trans "Hotels" %}</a></li>
+            <li id="tab_transport" {% ifequal tab_active "tab_transport" %}class="active"{% endifequal %}><a href="/{{ LANGUAGE_CODE}}/transport/">{% trans "Transport" %}</a></li>
+            {% endcomment %}
+            <li id="tab_information" {% ifequal tab_active "tab_information" %}class="active"{% endifequal %}><a href="/{{ LANGUAGE_CODE}}/information">{% trans "About this Site" %}</a></li>
+        </ul>
+{% endblock %}
+
+{% block subnav %}
+        <!-- sub nav -->
+        <ul class="subnav">
+            {% for a in areas %}
+            <li style="color:a.background;"><a href="{{ a.get_absolute_url }}">{{ a.nom }}</a></li>
+            {% endfor %}
+        </ul>
+{% endblock %}
+
+{% block footer %}
+<!-- footer -->
+<div class="footer_wrapper">
+
+	<div class="footer">
+
+        <div class="left">
+            <ul>
+                <li><a href="/information/">{% trans "About this site" %}</a></li>
+                <li><a href="/sitemap.xml">{% trans "Site map" %}</a></li>
+            </ul>
+            <div class="clear"></div>
+            
+        </div>
+        
+        <div class="right">
+            <p>{% trans "Con amore e passione" %} <a href="http://www.longsox.net">Longsox Consulting</a></p>
+        </div>
+    
+    </div>
+
+</div>
+
+<a id="inline" style="position:fixed;" href="#inline1" class="feedback" title="Feedback"><span>Feedback</span></a>
+
+<div style="display:none;">
+
+<div id="inline1" style="width:450px; height:400px; background:#fff; padding:20px; overflow:hidden;">
+ 
+    <h3>{% trans "Feedback Form" %}</h3>
+    <p>{% trans "We would love to get some feedback from you, please submit a response below." %}</p>
+    
+    <div id="note"></div>
+    
+    <div id="hide">
+    
+    <form id="feedback" action="javascript:alert('success!');">
+    
+        <label>{% trans "Name:" %}</label>
+        <input type="text" name="name" value="">
+        
+        <label>{% trans "Email:" %}</label>
+        <input type="text" name="email" value="">
+        
+        <label>{% trans "Your Message:" %}</label>
+        <textarea name="message" rows="8" cols="40"></textarea>
+        
+        <input class="submit" type="submit" name="submit" value="" />
+        
+    </form>
+    
+    </div>
+               
+</div>
+
+</div>
+{% endblock %}

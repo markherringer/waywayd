@@ -1,0 +1,7 @@
+<ul id="cloud">
+{% for t in tags %}
+<li class="tag-{{t.font_size}}">
+    <a href="{% url attractions_for tag=t.url_name %}"> {{ t.ml}} ({{ t.count }})</a>
+</li>
+{% endfor %}
+</ul>

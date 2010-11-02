@@ -1,0 +1,18 @@
+{% extends 'attractions/base.html' %}
+{% load tagging_tags %}
+{% load i18n %}
+
+{% block extra_head %}
+{{olmap.media}}
+{% endblock %}
+
+{% block body %}
+<!-- content -->
+<div class="content">
+    {% cloud tags %}
+    <!-- interactive maps -->
+    {{olmap}}
+</div>
+{% endblock %}
+
+

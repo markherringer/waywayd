@@ -1,0 +1,4 @@
+Contains data files to be imported into the database.
+
+hotels.tsv = tab separated values representing all hotels within South Africa
+from the booking.com data.

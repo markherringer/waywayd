@@ -1,0 +1,30 @@
+/* SITE-SPECIFIC TAB STYLING */
+
+ul.globalnav {
+    clear: right;
+}
+body.information #tab_information a,
+body.transport #tab_transport a,
+body.areas #tab_areas a,
+body.profile #tab_profile a,
+body.notices #tab_notices a
+{
+    color: #fff; /* selected tab text colour */
+    background: #669900;
+}
+body.information #tab_information,
+body.areas #tab_areas,
+body.hotels #tab_hotels,
+body.attractions #tab_attractions,
+body.profile #tab_profile,
+body.notices #tab_notices
+{
+    margin: 0; /* to compensate for border */
+    padding: 5px 0 5px;
+    /*
+    background-color: #DEF;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000; 
+    */
+}

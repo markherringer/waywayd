@@ -1,0 +1,113 @@
+{% extends 'attractions/base.html' %}
+{% load attraction_tags %}
+{% load i18n %}
+
+{% block extra_head %}
+{{olmap.media}}
+{% endblock %}
+
+{% block body_class %}areas{% endblock %}
+
+{% block subnav %}
+<!-- sub nav -->
+<ul class="subnav">
+    {% for a in areas %}
+    <li><a href="{{ a.get_absolute_url }}">{{ a.nom }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
+{% block above_body %}
+<div>
+    {% if tag %}<span class="map_legend"><span>{% trans "Map Colour Key:" %}</span> <img src="{{ STATIC_URL }}images/pinkdot.png" alt="pink dot"/> {% trans "= Hotels" %} <img src="{{ STATIC_URL }}images/bluedot.png" alt="blue dot"/>{% trans "= Attractions" %}</span>
+    {% endif %}
+    {% show_breadcrumb breadcrumb %}
+</div>
+{% endblock %}
+
+
+{% block body %}
+<div class="content">
+    <div class="map_wrapper">
+        {{olmap}}
+    </div>
+    <!-- showreel -->
+    <div id="slideshow">
+    {% if areas %}
+        {% for item in areas %}
+            {% if item.image %}
+    <div class="gallery gallery_wrapper">
+        <img src="{{item.image.url}}" width="620" height="260" alt="" />
+        <div {% if item.background %}style="background: {{item.background}}"{% endif %}>{{item.headline|safe}}</div>
+    </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    </div>
+    <!-- accordion -->
+    {% if headlines %}
+        {% for headline in headlines %}
+            {{ headline.html|safe }}
+        {% endfor %}
+    {% endif %}
+</div>
+    <!-- sidebar -->
+    <div class="sidebar">
+    	
+        <!-- tabs -->
+        <div class="tabs"> 
+            <ul class="idTabs"> 
+                <li><a href="#idTab1" class="selected">Tags</a></li> 
+                {# <li><a href="#idTab2">Hotels</a></li> #}
+                <li><a href="#idTab2">Transport</a></li>
+            </ul>
+            <div id="idTab1" class="rhtab">
+                {% cloud all_tags %}
+                {% comment %}
+                Not even my bitching is DRY, fucking bullshit I say
+                <form action="/attractions/tag/lang/{{LANGUAGE_CODE}}/" id="tag_search_form" enctype="multipart/form-data" method="POST">
+                	<fieldset>
+                        {{tag_search.tag_search}}
+                    </fieldset>
+                	<fieldset>
+                    <input class="search" type="submit" name="search" value=""/> 
+                    </fieldset>
+                <form>
+                {% endcomment %}
+            </div>
+            {% comment %}
+            <div id="idTab2" class="rhtab">
+                <form name="searchhotels" id="searchhotels" class="searchform" action="">
+                	<fieldset>
+                    	<input class="location" type="text" value="Search Hotels" />
+                    </fieldset>
+                    <fieldset>
+                        <label class="date">Check in date</label>
+                        <input name="checkout_date" id="checkout_date" class="date" type="text" value="dd/mm/yyyy" />
+                    </fieldset>
+                    <fieldset>
+                        <label class="date">Check out date</label>
+                        <input name="checkin_date" id="checkin_date" class="date" type="text" value="dd/mm/yyyy" />
+                    </fieldset>
+                    <fieldset>
+                    	<input type="checkbox" class="check" />
+                        <label class="check">I don't have specific dates</label>
+                    </fieldset>
+                    <fieldset>
+                      	<input class="search" type="submit" name="search" value="" />
+                    </fieldset>
+                </form>
+            </div>
+            {% endcomment %}
+            <div id="idTab2" class="rhtab">
+                {% include 'attractions/transport_div.html' %}
+            </div>
+        </div>
+
+        <div class="flickr_wrapper">
+            <h2>{% trans "Citta' del Capo" %}</h2>
+            <ul class="flickr">
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+

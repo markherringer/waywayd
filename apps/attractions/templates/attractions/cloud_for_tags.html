@@ -1,0 +1,11 @@
+<ul id="cloud">
+{% for t in tags %}
+<li class="tag-{{t.font_size}}">
+    {% if areas %}
+    <a href="{% url areas_for tag=t.url_name %}"> {{ t.ml}} ({{ t.count }})</a>
+    {% else %}
+    <a href="{% url attractions_for tag=t.url_name %}"> {{ t.ml}} ({{ t.count }})</a>
+    {% endif %}
+</li>
+{% endfor %}
+</ul>

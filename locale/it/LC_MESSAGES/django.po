@@ -1,0 +1,1550 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-23 13:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: apps/attractions/constants.py:5
+msgid "--- Please Select ---"
+msgstr ""
+
+#: apps/attractions/constants.py:6 templates/site_base.html:46
+msgid "South Africa"
+msgstr ""
+
+#: apps/attractions/constants.py:7
+msgid "United Kingdom"
+msgstr ""
+
+#: apps/attractions/constants.py:8
+msgid "United States"
+msgstr ""
+
+#: apps/attractions/constants.py:9
+msgid "Canada"
+msgstr ""
+
+#: apps/attractions/constants.py:10
+msgid "Australia"
+msgstr ""
+
+#: apps/attractions/constants.py:11
+msgid "New Zealand"
+msgstr ""
+
+#: apps/attractions/constants.py:12
+msgid "Ireland"
+msgstr ""
+
+#: apps/attractions/constants.py:13
+msgid "France"
+msgstr ""
+
+#: apps/attractions/constants.py:14
+msgid "Germany"
+msgstr ""
+
+#: apps/attractions/constants.py:15
+msgid "Italy"
+msgstr ""
+
+#: apps/attractions/constants.py:16
+msgid "Spain"
+msgstr ""
+
+#: apps/attractions/constants.py:17
+msgid "Afghanistan"
+msgstr ""
+
+#: apps/attractions/constants.py:18
+msgid "Albania"
+msgstr ""
+
+#: apps/attractions/constants.py:19
+msgid "Algeria"
+msgstr ""
+
+#: apps/attractions/constants.py:20
+msgid "American Samoa"
+msgstr ""
+
+#: apps/attractions/constants.py:21
+msgid "Andorra"
+msgstr ""
+
+#: apps/attractions/constants.py:22
+msgid "Angola"
+msgstr ""
+
+#: apps/attractions/constants.py:23
+msgid "Anguilla"
+msgstr ""
+
+#: apps/attractions/constants.py:24
+msgid "Antarctica"
+msgstr ""
+
+#: apps/attractions/constants.py:25
+msgid "Antigua and Barbuda"
+msgstr ""
+
+#: apps/attractions/constants.py:26
+msgid "Argentina"
+msgstr ""
+
+#: apps/attractions/constants.py:27
+msgid "Armenia"
+msgstr ""
+
+#: apps/attractions/constants.py:28
+msgid "Aruba"
+msgstr ""
+
+#: apps/attractions/constants.py:29
+msgid "Austria"
+msgstr ""
+
+#: apps/attractions/constants.py:30
+msgid "Azerbaidjan"
+msgstr ""
+
+#: apps/attractions/constants.py:31
+msgid "Bahamas"
+msgstr ""
+
+#: apps/attractions/constants.py:32
+msgid "Bahrain"
+msgstr ""
+
+#: apps/attractions/constants.py:33
+msgid "Bangladesh"
+msgstr ""
+
+#: apps/attractions/constants.py:34
+msgid "Barbados"
+msgstr ""
+
+#: apps/attractions/constants.py:35
+msgid "Belarus"
+msgstr ""
+
+#: apps/attractions/constants.py:36
+msgid "Belgium"
+msgstr ""
+
+#: apps/attractions/constants.py:37
+msgid "Belize"
+msgstr ""
+
+#: apps/attractions/constants.py:38
+msgid "Benin"
+msgstr ""
+
+#: apps/attractions/constants.py:39
+msgid "Bermuda"
+msgstr ""
+
+#: apps/attractions/constants.py:40
+msgid "Bhutan"
+msgstr ""
+
+#: apps/attractions/constants.py:41
+msgid "Bolivia"
+msgstr ""
+
+#: apps/attractions/constants.py:42
+msgid "Bosnia-Herzegovina"
+msgstr ""
+
+#: apps/attractions/constants.py:43
+msgid "Botswana"
+msgstr ""
+
+#: apps/attractions/constants.py:44
+msgid "Bouvet Island"
+msgstr ""
+
+#: apps/attractions/constants.py:45
+msgid "Brazil"
+msgstr ""
+
+#: apps/attractions/constants.py:46
+msgid "British Indian Ocean Territory"
+msgstr ""
+
+#: apps/attractions/constants.py:47
+msgid "Brunei Darussalam"
+msgstr ""
+
+#: apps/attractions/constants.py:48
+msgid "Bulgaria"
+msgstr ""
+
+#: apps/attractions/constants.py:49
+msgid "Burkina Faso"
+msgstr ""
+
+#: apps/attractions/constants.py:50
+msgid "Burundi"
+msgstr ""
+
+#: apps/attractions/constants.py:51
+msgid "Cambodia"
+msgstr ""
+
+#: apps/attractions/constants.py:52
+msgid "Cameroon"
+msgstr ""
+
+#: apps/attractions/constants.py:53
+msgid "Cape Verde"
+msgstr ""
+
+#: apps/attractions/constants.py:54
+msgid "Cayman Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:55
+msgid "Central African Republic"
+msgstr ""
+
+#: apps/attractions/constants.py:56
+msgid "Chad"
+msgstr ""
+
+#: apps/attractions/constants.py:57
+msgid "Chile"
+msgstr ""
+
+#: apps/attractions/constants.py:58
+msgid "China"
+msgstr ""
+
+#: apps/attractions/constants.py:59
+msgid "Christmas Island"
+msgstr ""
+
+#: apps/attractions/constants.py:60
+msgid "Cocos (Keeling) Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:61
+msgid "Colombia"
+msgstr ""
+
+#: apps/attractions/constants.py:62
+msgid "Comoros"
+msgstr ""
+
+#: apps/attractions/constants.py:63
+msgid "Congo"
+msgstr ""
+
+#: apps/attractions/constants.py:64
+msgid "Cook Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:65
+msgid "Costa Rica"
+msgstr ""
+
+#: apps/attractions/constants.py:66
+msgid "Croatia"
+msgstr ""
+
+#: apps/attractions/constants.py:67
+msgid "Cuba"
+msgstr ""
+
+#: apps/attractions/constants.py:68
+msgid "Cyprus"
+msgstr ""
+
+#: apps/attractions/constants.py:69
+msgid "Czech Republic"
+msgstr ""
+
+#: apps/attractions/constants.py:70
+msgid "Denmark"
+msgstr ""
+
+#: apps/attractions/constants.py:71
+msgid "Djibouti"
+msgstr ""
+
+#: apps/attractions/constants.py:72
+msgid "Dominica"
+msgstr ""
+
+#: apps/attractions/constants.py:73
+msgid "Dominican Republic"
+msgstr ""
+
+#: apps/attractions/constants.py:74
+msgid "East Timor"
+msgstr ""
+
+#: apps/attractions/constants.py:75
+msgid "Ecuador"
+msgstr ""
+
+#: apps/attractions/constants.py:76
+msgid "Egypt"
+msgstr ""
+
+#: apps/attractions/constants.py:77
+msgid "El Salvador"
+msgstr ""
+
+#: apps/attractions/constants.py:78
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: apps/attractions/constants.py:79
+msgid "Eritrea"
+msgstr ""
+
+#: apps/attractions/constants.py:80
+msgid "Estonia"
+msgstr ""
+
+#: apps/attractions/constants.py:81
+msgid "Ethiopia"
+msgstr ""
+
+#: apps/attractions/constants.py:82
+msgid "Falkland Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:83
+msgid "Faroe Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:84
+msgid "Fiji"
+msgstr ""
+
+#: apps/attractions/constants.py:85
+msgid "Finland"
+msgstr ""
+
+#: apps/attractions/constants.py:86
+msgid "Former Czechoslovakia"
+msgstr ""
+
+#: apps/attractions/constants.py:87
+msgid "Former USSR"
+msgstr ""
+
+#: apps/attractions/constants.py:88
+msgid "France (European Territory)"
+msgstr ""
+
+#: apps/attractions/constants.py:89
+msgid "French Guyana"
+msgstr ""
+
+#: apps/attractions/constants.py:90
+msgid "French Southern Territories"
+msgstr ""
+
+#: apps/attractions/constants.py:91
+msgid "Gabon"
+msgstr ""
+
+#: apps/attractions/constants.py:92
+msgid "Gambia"
+msgstr ""
+
+#: apps/attractions/constants.py:93
+msgid "Georgia"
+msgstr ""
+
+#: apps/attractions/constants.py:94
+msgid "Ghana"
+msgstr ""
+
+#: apps/attractions/constants.py:95
+msgid "Gibraltar"
+msgstr ""
+
+#: apps/attractions/constants.py:96
+msgid "Greece"
+msgstr ""
+
+#: apps/attractions/constants.py:97
+msgid "Greenland"
+msgstr ""
+
+#: apps/attractions/constants.py:98
+msgid "Grenada"
+msgstr ""
+
+#: apps/attractions/constants.py:99
+msgid "Guadeloupe (French)"
+msgstr ""
+
+#: apps/attractions/constants.py:100
+msgid "Guam (USA)"
+msgstr ""
+
+#: apps/attractions/constants.py:101
+msgid "Guatemala"
+msgstr ""
+
+#: apps/attractions/constants.py:102
+msgid "Guinea"
+msgstr ""
+
+#: apps/attractions/constants.py:103
+msgid "Guinea Bissau"
+msgstr ""
+
+#: apps/attractions/constants.py:104
+msgid "Guyana"
+msgstr ""
+
+#: apps/attractions/constants.py:105
+msgid "Haiti"
+msgstr ""
+
+#: apps/attractions/constants.py:106
+msgid "Heard and McDonald Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:107
+msgid "Honduras"
+msgstr ""
+
+#: apps/attractions/constants.py:108
+msgid "Hong Kong"
+msgstr ""
+
+#: apps/attractions/constants.py:109
+msgid "Hungary"
+msgstr ""
+
+#: apps/attractions/constants.py:110
+msgid "Iceland"
+msgstr ""
+
+#: apps/attractions/constants.py:111
+msgid "India"
+msgstr ""
+
+#: apps/attractions/constants.py:112
+msgid "Indonesia"
+msgstr ""
+
+#: apps/attractions/constants.py:113
+msgid "Iran"
+msgstr ""
+
+#: apps/attractions/constants.py:114
+msgid "Iraq"
+msgstr ""
+
+#: apps/attractions/constants.py:115
+msgid "Israel"
+msgstr ""
+
+#: apps/attractions/constants.py:116
+msgid "Ivory Coast (Cote D&#39;Ivoire)"
+msgstr ""
+
+#: apps/attractions/constants.py:117
+msgid "Jamaica"
+msgstr ""
+
+#: apps/attractions/constants.py:118
+msgid "Japan"
+msgstr ""
+
+#: apps/attractions/constants.py:119
+msgid "Jordan"
+msgstr ""
+
+#: apps/attractions/constants.py:120
+msgid "Kazakhstan"
+msgstr ""
+
+#: apps/attractions/constants.py:121
+msgid "Kenya"
+msgstr ""
+
+#: apps/attractions/constants.py:122
+msgid "Kiribati"
+msgstr ""
+
+#: apps/attractions/constants.py:123
+msgid "Kuwait"
+msgstr ""
+
+#: apps/attractions/constants.py:124
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: apps/attractions/constants.py:125
+msgid "Laos"
+msgstr ""
+
+#: apps/attractions/constants.py:126
+msgid "Latvia"
+msgstr ""
+
+#: apps/attractions/constants.py:127
+msgid "Lebanon"
+msgstr ""
+
+#: apps/attractions/constants.py:128
+msgid "Lesotho"
+msgstr ""
+
+#: apps/attractions/constants.py:129
+msgid "Liberia"
+msgstr ""
+
+#: apps/attractions/constants.py:130
+msgid "Libya"
+msgstr ""
+
+#: apps/attractions/constants.py:131
+msgid "Liechtenstein"
+msgstr ""
+
+#: apps/attractions/constants.py:132
+msgid "Lithuania"
+msgstr ""
+
+#: apps/attractions/constants.py:133
+msgid "Luxembourg"
+msgstr ""
+
+#: apps/attractions/constants.py:134
+msgid "Macau"
+msgstr ""
+
+#: apps/attractions/constants.py:135
+msgid "Macedonia"
+msgstr ""
+
+#: apps/attractions/constants.py:136
+msgid "Madagascar"
+msgstr ""
+
+#: apps/attractions/constants.py:137
+msgid "Malawi"
+msgstr ""
+
+#: apps/attractions/constants.py:138
+msgid "Malaysia"
+msgstr ""
+
+#: apps/attractions/constants.py:139
+msgid "Maldives"
+msgstr ""
+
+#: apps/attractions/constants.py:140
+msgid "Mali"
+msgstr ""
+
+#: apps/attractions/constants.py:141
+msgid "Malta"
+msgstr ""
+
+#: apps/attractions/constants.py:142
+msgid "Marshall Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:143
+msgid "Martinique (French)"
+msgstr ""
+
+#: apps/attractions/constants.py:144
+msgid "Mauritania"
+msgstr ""
+
+#: apps/attractions/constants.py:145
+msgid "Mauritius"
+msgstr ""
+
+#: apps/attractions/constants.py:146
+msgid "Mayotte"
+msgstr ""
+
+#: apps/attractions/constants.py:147
+msgid "Mexico"
+msgstr ""
+
+#: apps/attractions/constants.py:148
+msgid "Micronesia"
+msgstr ""
+
+#: apps/attractions/constants.py:149
+msgid "Moldavia"
+msgstr ""
+
+#: apps/attractions/constants.py:150
+msgid "Monaco"
+msgstr ""
+
+#: apps/attractions/constants.py:151
+msgid "Mongolia"
+msgstr ""
+
+#: apps/attractions/constants.py:152
+msgid "Montserrat"
+msgstr ""
+
+#: apps/attractions/constants.py:153
+msgid "Morocco"
+msgstr ""
+
+#: apps/attractions/constants.py:154
+msgid "Mozambique"
+msgstr ""
+
+#: apps/attractions/constants.py:155
+msgid "Myanmar"
+msgstr ""
+
+#: apps/attractions/constants.py:156
+msgid "Namibia"
+msgstr ""
+
+#: apps/attractions/constants.py:157
+msgid "Nauru"
+msgstr ""
+
+#: apps/attractions/constants.py:158
+msgid "Nepal"
+msgstr ""
+
+#: apps/attractions/constants.py:159
+msgid "Netherlands"
+msgstr ""
+
+#: apps/attractions/constants.py:160
+msgid "Netherlands Antilles"
+msgstr ""
+
+#: apps/attractions/constants.py:161
+msgid "Neutral Zone"
+msgstr ""
+
+#: apps/attractions/constants.py:162
+msgid "New Caledonia (French)"
+msgstr ""
+
+#: apps/attractions/constants.py:163
+msgid "Nicaragua"
+msgstr ""
+
+#: apps/attractions/constants.py:164
+msgid "Niger"
+msgstr ""
+
+#: apps/attractions/constants.py:165
+msgid "Nigeria"
+msgstr ""
+
+#: apps/attractions/constants.py:166
+msgid "Niue"
+msgstr ""
+
+#: apps/attractions/constants.py:167
+msgid "Norfolk Island"
+msgstr ""
+
+#: apps/attractions/constants.py:168
+msgid "North Korea"
+msgstr ""
+
+#: apps/attractions/constants.py:169
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:170
+msgid "Norway"
+msgstr ""
+
+#: apps/attractions/constants.py:171
+msgid "Oman"
+msgstr ""
+
+#: apps/attractions/constants.py:172
+msgid "Pakistan"
+msgstr ""
+
+#: apps/attractions/constants.py:173
+msgid "Palau"
+msgstr ""
+
+#: apps/attractions/constants.py:174
+msgid "Panama"
+msgstr ""
+
+#: apps/attractions/constants.py:175
+msgid "Papua New Guinea"
+msgstr ""
+
+#: apps/attractions/constants.py:176
+msgid "Paraguay"
+msgstr ""
+
+#: apps/attractions/constants.py:177
+msgid "Peru"
+msgstr ""
+
+#: apps/attractions/constants.py:178
+msgid "Philippines"
+msgstr ""
+
+#: apps/attractions/constants.py:179
+msgid "Pitcairn Island"
+msgstr ""
+
+#: apps/attractions/constants.py:180
+msgid "Poland"
+msgstr ""
+
+#: apps/attractions/constants.py:181
+msgid "Polynesia (French)"
+msgstr ""
+
+#: apps/attractions/constants.py:182
+msgid "Portugal"
+msgstr ""
+
+#: apps/attractions/constants.py:183
+msgid "Puerto Rico"
+msgstr ""
+
+#: apps/attractions/constants.py:184
+msgid "Qatar"
+msgstr ""
+
+#: apps/attractions/constants.py:185
+msgid "Reunion (French)"
+msgstr ""
+
+#: apps/attractions/constants.py:186
+msgid "Romania"
+msgstr ""
+
+#: apps/attractions/constants.py:187
+msgid "Russian Federation"
+msgstr ""
+
+#: apps/attractions/constants.py:188
+msgid "Rwanda"
+msgstr ""
+
+#: apps/attractions/constants.py:189
+msgid "S. Georgia &amp; S. Sandwich Isls."
+msgstr ""
+
+#: apps/attractions/constants.py:190
+msgid "Saint Helena"
+msgstr ""
+
+#: apps/attractions/constants.py:191
+msgid "Saint Kitts &amp; Nevis Anguilla"
+msgstr ""
+
+#: apps/attractions/constants.py:192
+msgid "Saint Lucia"
+msgstr ""
+
+#: apps/attractions/constants.py:193
+msgid "Saint Pierre and Miquelon"
+msgstr ""
+
+#: apps/attractions/constants.py:194
+msgid "Saint Tome (Sao Tome) and Principe"
+msgstr ""
+
+#: apps/attractions/constants.py:195
+msgid "Saint Vincent &amp; Grenadines"
+msgstr ""
+
+#: apps/attractions/constants.py:196
+msgid "Samoa"
+msgstr ""
+
+#: apps/attractions/constants.py:197
+msgid "San Marino"
+msgstr ""
+
+#: apps/attractions/constants.py:198
+msgid "Saudi Arabia"
+msgstr ""
+
+#: apps/attractions/constants.py:199
+msgid "Senegal"
+msgstr ""
+
+#: apps/attractions/constants.py:200
+msgid "Seychelles"
+msgstr ""
+
+#: apps/attractions/constants.py:201
+msgid "Sierra Leone"
+msgstr ""
+
+#: apps/attractions/constants.py:202
+msgid "Singapore"
+msgstr ""
+
+#: apps/attractions/constants.py:203
+msgid "Slovak Republic"
+msgstr ""
+
+#: apps/attractions/constants.py:204
+msgid "Slovenia"
+msgstr ""
+
+#: apps/attractions/constants.py:205
+msgid "Solomon Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:206
+msgid "Somalia"
+msgstr ""
+
+#: apps/attractions/constants.py:207
+msgid "South Korea"
+msgstr ""
+
+#: apps/attractions/constants.py:208
+msgid "Sri Lanka"
+msgstr ""
+
+#: apps/attractions/constants.py:209
+msgid "Sudan"
+msgstr ""
+
+#: apps/attractions/constants.py:210
+msgid "Suriname"
+msgstr ""
+
+#: apps/attractions/constants.py:211
+msgid "Svalbard and Jan Mayen Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:212
+msgid "Swaziland"
+msgstr ""
+
+#: apps/attractions/constants.py:213
+msgid "Sweden"
+msgstr ""
+
+#: apps/attractions/constants.py:214
+msgid "Switzerland"
+msgstr ""
+
+#: apps/attractions/constants.py:215
+msgid "Syria"
+msgstr ""
+
+#: apps/attractions/constants.py:216
+msgid "Tadjikistan"
+msgstr ""
+
+#: apps/attractions/constants.py:217
+msgid "Taiwan"
+msgstr ""
+
+#: apps/attractions/constants.py:218
+msgid "Tanzania"
+msgstr ""
+
+#: apps/attractions/constants.py:219
+msgid "Thailand"
+msgstr ""
+
+#: apps/attractions/constants.py:220
+msgid "Togo"
+msgstr ""
+
+#: apps/attractions/constants.py:221
+msgid "Tokelau"
+msgstr ""
+
+#: apps/attractions/constants.py:222
+msgid "Tonga"
+msgstr ""
+
+#: apps/attractions/constants.py:223
+msgid "Trinidad and Tobago"
+msgstr ""
+
+#: apps/attractions/constants.py:224
+msgid "Tunisia"
+msgstr ""
+
+#: apps/attractions/constants.py:225
+msgid "Turkey"
+msgstr ""
+
+#: apps/attractions/constants.py:226
+msgid "Turkmenistan"
+msgstr ""
+
+#: apps/attractions/constants.py:227
+msgid "Turks and Caicos Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:228
+msgid "Tuvalu"
+msgstr ""
+
+#: apps/attractions/constants.py:229
+msgid "Uganda"
+msgstr ""
+
+#: apps/attractions/constants.py:230
+msgid "Ukraine"
+msgstr ""
+
+#: apps/attractions/constants.py:231
+msgid "United Arab Emirates"
+msgstr ""
+
+#: apps/attractions/constants.py:232
+msgid "Uruguay"
+msgstr ""
+
+#: apps/attractions/constants.py:233
+msgid "USA Military"
+msgstr ""
+
+#: apps/attractions/constants.py:234
+msgid "USA Minor Outlying Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:235
+msgid "Uzbekistan"
+msgstr ""
+
+#: apps/attractions/constants.py:236
+msgid "Vanuatu"
+msgstr ""
+
+#: apps/attractions/constants.py:237
+msgid "Vatican City State"
+msgstr ""
+
+#: apps/attractions/constants.py:238
+msgid "Venezuela"
+msgstr ""
+
+#: apps/attractions/constants.py:239
+msgid "Vietnam"
+msgstr ""
+
+#: apps/attractions/constants.py:240
+msgid "Virgin Islands (British)"
+msgstr ""
+
+#: apps/attractions/constants.py:241
+msgid "Virgin Islands (USA)"
+msgstr ""
+
+#: apps/attractions/constants.py:242
+msgid "Wallis and Futuna Islands"
+msgstr ""
+
+#: apps/attractions/constants.py:243
+msgid "Western Sahara"
+msgstr ""
+
+#: apps/attractions/constants.py:244
+msgid "Yemen"
+msgstr ""
+
+#: apps/attractions/constants.py:245
+msgid "Yugoslavia"
+msgstr ""
+
+#: apps/attractions/constants.py:246
+msgid "Zaire"
+msgstr ""
+
+#: apps/attractions/constants.py:247
+msgid "Zambia"
+msgstr ""
+
+#: apps/attractions/constants.py:248
+msgid "Zimbabwe"
+msgstr ""
+
+#: apps/attractions/views.py:52 apps/attractions/views.py:72
+#: apps/attractions/views.py:95 apps/attractions/views.py:143
+#: apps/attractions/views.py:169 apps/attractions/views.py:184
+#: apps/attractions/views.py:198 apps/attractions/views.py:274
+msgid "Home"
+msgstr ""
+
+#: apps/attractions/views.py:53 apps/attractions/views.py:170
+#: apps/attractions/views.py:275
+msgid "All Attractions"
+msgstr "Tutte le attrazioni"
+
+#: apps/attractions/views.py:73 apps/attractions/views.py:96
+msgid "All Regions"
+msgstr "Tutte le regioni"
+
+#: apps/attractions/views.py:144
+msgid "All"
+msgstr "Tutto"
+
+#: apps/attractions/views.py:145
+#, python-format
+msgid "Tagged %(tag)s"
+msgstr ""
+
+#: apps/attractions/views.py:147
+#, python-format
+msgid "Within %s"
+msgstr ""
+
+#: apps/attractions/views.py:149
+#, python-format
+msgid "Within %(area)s and tagged %(tag)s"
+msgstr "all'interno %(area)s e contrassegnate %(tag)s"
+
+#: apps/attractions/views.py:171
+#, python-format
+msgid "Attractions For %(tag)s"
+msgstr "Attrazioni per %(tag)s"
+
+#: apps/attractions/views.py:185 apps/attractions/views.py:199
+msgid "All Hotels"
+msgstr "Tutti gli Alberghi"
+
+#: apps/attractions/templates/attractions/area_list.html:21
+#: apps/attractions/templates/attractions/base.html:17
+msgid "Map Colour Key:"
+msgstr ""
+
+#: apps/attractions/templates/attractions/area_list.html:21
+#: apps/attractions/templates/attractions/base.html:17
+msgid "= Hotels"
+msgstr "= Alberghi"
+
+#: apps/attractions/templates/attractions/area_list.html:21
+#: apps/attractions/templates/attractions/base.html:17
+msgid "= Attractions"
+msgstr "= Attrazioni"
+
+#: apps/attractions/templates/attractions/area_list.html:107
+msgid "Citta' del Capo"
+msgstr ""
+
+#: apps/attractions/templates/attractions/detail.html:13
+#: apps/attractions/templates/attractions/hotel_detail.html:14
+msgid "Show Hotels within"
+msgstr ""
+
+#: apps/attractions/templates/attractions/detail.html:15
+#: apps/attractions/templates/attractions/hotel_detail.html:16
+msgid "kilometers"
+msgstr ""
+
+#: apps/attractions/templates/attractions/detail.html:20
+msgid "Related Attractions"
+msgstr "Le Attrazioni"
+
+#: apps/flatpages/admin.py:8 apps/flatpages/models.py:9
+#: third-party/django_multilingual/multilingual/flatpages/admin.py:9
+#: third-party/django_multilingual/multilingual/flatpages/models.py:9
+msgid "URL"
+msgstr ""
+
+#: apps/flatpages/admin.py:9
+#: third-party/django_multilingual/multilingual/flatpages/admin.py:10
+msgid ""
+"Example: '/about/contact/'. Make sure to have leading and trailing slashes."
+msgstr ""
+
+#: apps/flatpages/admin.py:11
+#: third-party/django_multilingual/multilingual/flatpages/admin.py:12
+msgid ""
+"This value must contain only letters, numbers, underscores, dashes or "
+"slashes."
+msgstr ""
+
+#: apps/flatpages/admin.py:22
+#: third-party/django_multilingual/multilingual/flatpages/admin.py:23
+msgid "Advanced options"
+msgstr ""
+
+#: apps/flatpages/models.py:10
+#: third-party/django_multilingual/multilingual/flatpages/models.py:10
+msgid "enable comments"
+msgstr ""
+
+#: apps/flatpages/models.py:11
+#: third-party/django_multilingual/multilingual/flatpages/models.py:11
+msgid "template name"
+msgstr ""
+
+#: apps/flatpages/models.py:12
+#: third-party/django_multilingual/multilingual/flatpages/models.py:12
+msgid ""
+"Example: 'flatpages/contact_page.html'. If this isn't provided, the system "
+"will use 'flatpages/default.html'."
+msgstr ""
+
+#: apps/flatpages/models.py:13
+#: third-party/django_multilingual/multilingual/flatpages/models.py:13
+msgid "registration required"
+msgstr ""
+
+#: apps/flatpages/models.py:13
+#: third-party/django_multilingual/multilingual/flatpages/models.py:13
+msgid "If this is checked, only logged-in users will be able to view the page."
+msgstr ""
+
+#: apps/flatpages/models.py:17
+#: third-party/django_multilingual/multilingual/flatpages/models.py:30
+msgid "title"
+msgstr ""
+
+#: apps/flatpages/models.py:18
+#: third-party/django_multilingual/multilingual/flatpages/models.py:31
+msgid "content"
+msgstr ""
+
+#: apps/flatpages/models.py:23
+msgid "flat page"
+msgstr ""
+
+#: apps/flatpages/models.py:24
+msgid "flat pages"
+msgstr ""
+
+#: templates/base.html:34
+msgid "Hide announcement"
+msgstr ""
+
+#: templates/base.html:53
+msgid "clear"
+msgstr ""
+
+#: templates/site_base.html:33 templates/site_base.html.py:72
+msgid "Site map"
+msgstr "Site map"
+
+#: templates/site_base.html:35
+msgid "Feedback"
+msgstr "Feedback"
+
+#: templates/site_base.html:36
+msgid "Contact Us"
+msgstr ""
+
+#: templates/site_base.html:44
+msgid "Cape Town"
+msgstr "Citta'del Capo"
+
+#: templates/site_base.html:47
+msgid "Hotels"
+msgstr "Alberghi"
+
+#: templates/site_base.html:48
+msgid "Transport"
+msgstr "Trasportare"
+
+#: templates/site_base.html:50
+msgid "About this Site"
+msgstr "Perche' questo sito"
+
+#: templates/site_base.html:71
+msgid "About this site"
+msgstr "Perche' questo sito"
+
+#: templates/site_base.html:75
+msgid "&copy; 2010 Cittadelcapo."
+msgstr ""
+
+#: templates/site_base.html:79
+msgid "Con amore e passione"
+msgstr ""
+
+#: templates/site_base.html:92
+msgid "Feedback Form"
+msgstr "Feedback Form"
+
+#: templates/site_base.html:93
+msgid "We would love to get some feedback from you, please submit a response below."
+msgstr "Vorremmo la vostra opinione sulla qualita' delle informazioni. Scrivete la risposta nello spazio sottostante."
+
+#: templates/site_base.html:101
+msgid "Name:"
+msgstr "Nome:"
+
+#: templates/site_base.html:104
+msgid "Email:"
+msgstr "Email:"
+
+#: templates/site_base.html:107
+msgid "Your Message:"
+msgstr "ll tuo messaggio"
+
+#: templates/about/what_next.html:6 templates/about/what_next.html.py:9
+msgid "What Next?"
+msgstr "e poi?, che altro?"
+
+#: templates/about/what_next.html:35
+#, python-format
+msgid ""
+"Start by <a href=\"%(signup_url)s\">signing up</a> and <a href=\"%(login_url)"
+"s\">logging in</a>."
+msgstr ""
+
+#: templates/about/what_next.html:37
+#, python-format
+msgid "Start by <a href=\"%(login_url)s\">logging in</a>."
+msgstr ""
+
+#: templates/account/base.html:11
+msgid "E-Mail Addresses"
+msgstr ""
+
+#: templates/account/base.html:12
+msgid "OpenID Associations"
+msgstr ""
+
+#: templates/account/base.html:14 templates/account/password_change.html:5
+#: templates/account/password_change.html:8
+#: templates/account/password_reset_from_key.html:5
+#: templates/account/password_reset_from_key.html:8
+msgid "Change Password"
+msgstr ""
+
+#: templates/account/base.html:16 templates/account/password_set.html:6
+#: templates/account/password_set.html:9
+msgid "Set Password"
+msgstr ""
+
+#: templates/account/base.html:19 templates/account/password_delete.html:5
+#: templates/account/password_delete.html:8
+msgid "Delete Password"
+msgstr ""
+
+#: templates/account/base.html:21 templates/account/language_change.html:6
+#: templates/account/language_change.html:9
+msgid "Language"
+msgstr ""
+
+#: templates/account/base.html:22 templates/account/timezone_change.html:6
+#: templates/account/timezone_change.html:9
+msgid "Timezone"
+msgstr ""
+
+#: templates/account/email.html:6 templates/account/email.html.py:9
+msgid "Account"
+msgstr ""
+
+#: templates/account/email.html:11
+msgid "Email Addresses"
+msgstr ""
+
+#: templates/account/email.html:20
+msgid "verified"
+msgstr ""
+
+#: templates/account/email.html:22
+msgid "primary"
+msgstr ""
+
+#: templates/account/email.html:29
+msgid "make primary"
+msgstr ""
+
+#: templates/account/email.html:34
+msgid "unverified"
+msgstr ""
+
+#: templates/account/email.html:40
+msgid "re-send verification email"
+msgstr ""
+
+#: templates/account/email.html:50
+msgid "remove"
+msgstr ""
+
+#: templates/account/email.html:57
+msgid "None"
+msgstr ""
+
+#: templates/account/email.html:57
+msgid ""
+"You should really add one so you can receive notifications, reset your "
+"password if you forget it, etc."
+msgstr ""
+
+#: templates/account/email.html:60
+msgid "Add Email Address"
+msgstr ""
+
+#: templates/account/email.html:67
+msgid "add"
+msgstr ""
+
+#: templates/account/language_change.html:11
+msgid "Pinax can be used in your preferred language."
+msgstr ""
+
+#: templates/account/language_change.html:17
+msgid "Change my language"
+msgstr ""
+
+#: templates/account/login.html:7
+msgid "Login"
+msgstr ""
+
+#: templates/account/login.html:15 templates/account/signup.html:14
+msgid "Log In"
+msgstr ""
+
+#: templates/account/login.html:18 templates/account/password_reset.html:12
+#: templates/account/password_reset_done.html:11
+msgid "Note"
+msgstr ""
+
+#: templates/account/login.html:18 templates/account/password_reset.html:12
+#: templates/account/password_reset_done.html:11
+#, python-format
+msgid "you are already logged in as %(user)s."
+msgstr ""
+
+#: templates/account/login.html:22
+#, python-format
+msgid "Don't have an account? <a href=\"%(signup_url)s\">Sign up</a>!"
+msgstr ""
+
+#: templates/account/login.html:29
+msgid "Forgot password?"
+msgstr ""
+
+#: templates/account/login.html:33 templates/account/login.html.py:57
+msgid "Log in &raquo;"
+msgstr ""
+
+#: templates/account/login.html:38
+msgid "Or sign in with your OpenID"
+msgstr ""
+
+#: templates/account/login.html:62
+#, python-format
+msgid ""
+"If you have any trouble logging in to your account, contact us at <a href="
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: templates/account/logout.html:5
+msgid "Logout"
+msgstr ""
+
+#: templates/account/logout.html:8
+msgid "You've been logged out."
+msgstr ""
+
+#: templates/account/password_change.html:14
+#: templates/account/password_reset_from_key.html:17
+msgid "change password"
+msgstr ""
+
+#: templates/account/password_delete.html:9
+msgid ""
+"You may delete your password since you are currently logged in using OpenID."
+msgstr ""
+
+#: templates/account/password_delete.html:11
+msgid "delete my password"
+msgstr ""
+
+#: templates/account/password_delete_done.html:5
+#: templates/account/password_delete_done.html:8
+msgid "Password Deleted"
+msgstr ""
+
+#: templates/account/password_delete_done.html:9
+msgid "Your password has been deleted."
+msgstr ""
+
+#: templates/account/password_reset.html:6
+#: templates/account/password_reset.html:10
+#: templates/account/password_reset_done.html:5
+#: templates/account/password_reset_done.html:8
+msgid "Password Reset"
+msgstr ""
+
+#: templates/account/password_reset.html:15
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: templates/account/password_reset.html:21
+msgid "Reset my password"
+msgstr ""
+
+#: templates/account/password_reset.html:26
+#, python-format
+msgid ""
+"If you have any trouble resetting your password, contact us at <a href="
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: templates/account/password_reset_done.html:14
+#, python-format
+msgid ""
+"We have sent you an e-mail to <b>%(email)s</b>. If you do not receive it "
+"within a few minutes, contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">%"
+"(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: templates/account/password_set.html:15
+msgid "set password"
+msgstr ""
+
+#: templates/account/signup.html:6
+msgid "Signup"
+msgstr ""
+
+#: templates/account/signup.html:9
+msgid "Sign Up"
+msgstr ""
+
+#: templates/account/signup.html:12
+msgid "You are already logged in."
+msgstr ""
+
+#: templates/account/signup.html:14
+msgid "Already have an account?"
+msgstr ""
+
+#: templates/account/signup.html:20
+msgid "Sign Up &raquo;"
+msgstr ""
+
+#: templates/account/signup.html:27
+#, python-format
+msgid ""
+"By clicking \"Sign Up\", you are indicating that you have read and agree to "
+"the <a href=\"%(terms_url)s\">Terms of Use</a> and <a href=\"%(privacy_url)s"
+"\">Privacy Policy</a>."
+msgstr ""
+
+#: templates/account/signup.html:29
+#, python-format
+msgid ""
+"If you have any trouble creating your account, contact us at <a href="
+"\"mailto:%(CONTACT_EMAIL)s\">%(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: templates/account/timezone_change.html:11
+msgid ""
+"Pinax can localize all times into your preferred timezone. Change your "
+"timezone below."
+msgstr ""
+
+#: templates/account/timezone_change.html:17
+msgid "Change my timezone"
+msgstr ""
+
+#: templates/account/verification_sent.html:5
+#: templates/account/verification_sent.html:8
+msgid "Verify your e-mail address"
+msgstr ""
+
+#: templates/account/verification_sent.html:10
+#, python-format
+msgid ""
+"We have sent you an e-mail to <b>%(email)s</b> for verification. Follow the "
+"link provided to finalize the signup process. If you do not receive it "
+"within a few minutes, contact us at <a href=\"mailto:%(CONTACT_EMAIL)s\">%"
+"(CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: third-party/django_multilingual/multilingual/flatpages/models.py:35
+msgid "multilingual flat page"
+msgstr ""
+
+#: third-party/django_multilingual/multilingual/flatpages/models.py:36
+msgid "multilingual flat pages"
+msgstr ""
+
+#: third-party/django_multilingual/testproject/articles/models.py:267
+#: third-party/django_multilingual/testproject/articles/models.py:325
+msgid "Created by"
+msgstr ""
+
+#: third-party/django_multilingual/testproject/articles/models.py:269
+#: third-party/django_multilingual/testproject/articles/models.py:327
+msgid "Created at"
+msgstr ""
+
+#: third-party/django_multilingual/testproject/articles/models.py:271
+#: third-party/django_multilingual/testproject/articles/models.py:329
+#: third-party/django_multilingual/testproject/issue_16/models/category.py:11
+#: third-party/django_multilingual/testproject/issue_16/models/page.py:12
+msgid "Parent category"
+msgstr ""
+
+#: third-party/django_multilingual/testproject/articles/models.py:289
+#: third-party/django_multilingual/testproject/issue_16/models/category.py:15
+msgid "The name"
+msgstr ""
+
+#: third-party/django_multilingual/testproject/articles/models.py:291
+msgid "The description"
+msgstr ""
+
+#: third-party/django_multilingual/testproject/articles/models.py:336
+#: third-party/django_multilingual/testproject/issue_16/models/page.py:16
+msgid "The title"
+msgstr ""
+
+#: third-party/django_multilingual/testproject/articles/models.py:338
+#: third-party/django_multilingual/testproject/issue_16/models/page.py:18
+msgid "The contents"
+msgstr ""
+
+#: third-party/django_multilingual/testproject/issue_15/models.py:36
+#: third-party/django_multilingual/testproject/issue_29/models.py:36
+msgid "Parent gallery"
+msgstr ""
+
+#: third-party/django_multilingual/testproject/issue_15/models.py:37
+#: third-party/django_multilingual/testproject/issue_29/models.py:38
+msgid "Modified"
+msgstr ""
+
+#: third-party/django_multilingual/testproject/issue_15/models.py:40
+#: third-party/django_multilingual/testproject/issue_29/models.py:41
+#: third-party/django_multilingual/testproject/issue_37/models.py:34
+msgid "Title"
+msgstr ""
+
+#: third-party/django_multilingual/testproject/issue_15/models.py:41
+#: third-party/django_multilingual/testproject/issue_29/models.py:42
+msgid "Description"
+msgstr ""

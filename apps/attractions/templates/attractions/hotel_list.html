@@ -1,0 +1,15 @@
+{% extends 'attractions/base.html' %}
+{% load attraction_tags %}
+
+{% block extra_head %}
+{{olmap.media}}
+{% endblock %}
+
+{% block body_class %}hotels{% endblock %}
+
+{% block body %}
+{% cloud tags %}
+{{olmap}}
+{% endblock %}
+
+

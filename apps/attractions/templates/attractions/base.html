@@ -1,0 +1,70 @@
+{% extends 'site_base.html' %}
+{% load attraction_tags %}
+{% load i18n %}
+
+{% block head_title %}
+{% for x, y in breadcrumb %}
+{% if not forloop.first %}{{x}}{% if not forloop.last %}: {% endif %}{% endif %}
+{% endfor %}
+{% endblock %}
+
+{% block body_class %}attractions{% endblock %}
+
+
+{% block above_body %}
+<div>
+{% block legend %}
+    <span class="map_legend"><span>{% trans "Map Colour Key:" %}</span> <img src="{{ STATIC_URL }}images/pinkdot.png" alt="pink dot"/> {% trans "= Hotels" %} <img src="{{ STATIC_URL }}images/bluedot.png" alt="blue dot"/>{% trans "= Attractions" %}</span>
+{% endblock %}
+    {% show_breadcrumb breadcrumb %}
+</div>
+{% endblock %}
+
+{% block javascript_includes %}
+{% if not area %}
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.cycle.all.2.72.js"></script>
+{% endif %}
+<script>
+    var flickrHandler = function(data){
+        // append each photo to a li
+        $.each(data.items, function(i, item) {
+            i = i++;
+            $('<img alt=""/>').attr("src",
+            item.media.m).attr("title", item.title).appendTo("ul.flickr").wrap('<li><a href="' + item.media.m + '" rel="group"  title="' + item.title + '"></a></li>');
+            // convert to small thumb
+            $("ul.flickr li a img").each(function() {
+                var smallThumb = $(this).attr("src").replace(/_m.jpg$/i,'_s.jpg'); 
+                $(this).attr("src", smallThumb);
+            });
+            // modify to regular image size
+            $("ul.flickr li a").each(function() {
+                var modURL = $(this).attr("href").replace(/_m.jpg$/i,'.jpg');
+                $(this).attr("href", modURL);
+    
+                $(this).fancybox({                                                                                                                
+                    'titleShow' : true,
+                    'titlePostion': 'outside',
+                    'cyclic': true,
+                    'showNavArrows': true
+                });
+            });
+            if(i==11) return false;    
+        });
+    }
+</script>
+{% endblock %}
+
+{% block document_ready %}
+{% if area %}
+$("#id_tag_search").autocomplete("/attractions/ajax/tag_search/{{LANGUAGE_CODE}}/{{area.slug}}", { minChars: 2}) 
+$.getJSON("http://api.flickr.com/services/feeds/groups_pool.gne?id={{area.flickr_group}}&lang=en-us&format=json&jsoncallback=?",
+flickrHandler
+);
+{% else %}
+$("#id_tag_search").autocomplete("/attractions/ajax/tag_search/{{LANGUAGE_CODE}}", { minChars: 2}) 
+$('#slideshow').cycle({ fx: 'fade', height: '260px',speed: 5000 });
+$.getJSON("http://api.flickr.com/services/feeds/groups_pool.gne?id=1340769@N24&lang=en-us&format=json&jsoncallback=?",
+flickrHandler
+);
+{% endif %}
+{% endblock %}

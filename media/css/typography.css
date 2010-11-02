@@ -1,0 +1,535 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #767676;
+}
+
+
+/* Type/Links
+----------------------------------------------------------------------------------------------------*/
+a:active, a:link, a:visited {
+	text-decoration: none;
+	color: #767676;
+}
+
+a:hover {
+	color: #96ca2d;
+}
+
+.logo {
+	display: inline;
+	float: left;
+	margin: 20px 0 0 0;
+}
+
+.logo a {
+	display: block;
+	width: 260px;
+	height: 80px;
+	background: url(/site_media/static/images/cittadel_logo.png) 0 0 no-repeat;
+}
+
+.logo span {
+	display: none;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8 {
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: normal;
+	color: #669900;
+	margin:5px 5px 5px 20px;
+}
+
+h2 {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	color: #669900;
+	margin:5px 5px 5px 20px;
+}
+
+h3 {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	color: #669900;
+	margin:5px 5px 5px 30px;
+}
+
+p {
+	line-height: 18px;
+	margin:0px 5px 5px 30px;
+}
+
+h2.trigger a {
+	display: block;
+	width: 620px;
+	height: 16px;
+	line-height: 16px; 
+	background: url(/site_media/static/images/accordion_icon.png) 590px -16px no-repeat;
+	cursor: pointer;
+}
+
+h2.active a {
+	background-position: 590px 0;
+}
+
+a.feedback {
+	display: block;
+	width: 32px;
+	height: 110px;
+	background: url(/site_media/static/images/feedback.gif) 0 0 no-repeat;
+	position: absolute;
+	top: 40%;
+	left: 0;
+}
+
+a.feedback:hover {
+	background-position: -32px 0;
+}
+
+a.feedback span {
+	display: none;
+}
+
+
+/* Top Nav
+----------------------------------------------------------------------------------------------------*/
+ul.topnav {
+	float: right;
+	margin: 25px 0 0 0;
+}
+
+ul.topnav li {
+	display: inline;
+}
+
+ul.topnav li a {
+	display: block;
+	float: left;
+	color: #ccc;
+	font-style: normal;
+	line-height: 24px;
+	margin: 0 5px;
+}
+
+ul.topnav li a:hover {
+	color: #96ca2d;
+}
+
+
+/* Language Select
+----------------------------------------------------------------------------------------------------*/
+.selectmenu {
+	position:relative;
+	float: right;
+	width: 120px;
+	height: 24px;
+    background: none;
+	margin: 25px 0 0 5px;
+	cursor:pointer;
+	color: #999;
+	line-height: 24px;
+	padding-left: 5px;
+    padding-top: 2px;
+    font-size: 100%;
+}
+
+.selectmenu span {
+	color: #999;
+	line-height: 24px;
+	padding-left: 5px;
+}
+
+.select	{
+	position: relative; 
+	width: 120px; 
+	height: 24px; 
+	z-index: 10;
+}
+.select_sub	{
+	display: none; 
+	position: absolute; 
+	top: 48px; 
+	right: 0; 
+	width: 118px; 
+	background: #fff; 
+	border-bottom: 1px solid #efefef; 
+	border-left: 1px solid #efefef; 
+	border-right: 1px solid #efefef; 
+	z-index: 20;
+}
+.select_sub li {
+	display: inline;
+}
+.select_sub li a {
+	display: block; 
+	color: #ccc; 
+	margin: 0; 
+	padding: 0 0 0 5px; 
+	line-height: 24px;
+}
+.select_sub li a:hover {
+	color: #fff; 
+	background: #96ca2d;
+}
+
+
+/* Global Nav
+----------------------------------------------------------------------------------------------------*/
+ul.globalnav {
+	float: right;
+	margin: 32px 0 0 0;
+    clear:right;
+}
+
+ul.globalnav li {
+	display: inline;
+}
+
+ul.globalnav li a {
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 0 0 2px;
+	padding: 0 10px;
+	line-height: 30px;
+	color: #669900;
+	background: #e0ffb8;
+}
+
+ul.globalnav li a:hover {
+	color: #fff;
+	background: #96ca2d;
+}
+
+/*
+ul.globalnav li.active a {
+	color: #fff;
+	background: #669900;
+}
+*/
+
+/* Sub Nav
+----------------------------------------------------------------------------------------------------*/
+ul.subnav {
+	float: right;
+	clear: right;
+}
+
+ul.subnav li {
+	display: inline;
+}
+
+ul.subnav li a {
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 0 0 2px;
+	padding: 0 10px;
+	line-height: 30px;
+	color: #fff;
+}
+
+ul.subnav li a:hover {
+	color: #96ca2d;
+}
+
+
+/* Breadcrumb
+----------------------------------------------------------------------------------------------------*/
+span.map_legend {
+    float: right;
+    width: 310px;
+    font-weight: bold;
+	color: #96ca2d;
+}
+
+span.map_legend span {
+    color: #669900;
+}
+
+span.map_legend img {
+    vertical-align: middle;
+}
+
+ul.breadcrumb {
+	margin: 20px 10px;
+}
+
+ul.breadcrumb li {
+	display: inline;
+	font-weight: bold;
+	margin: 0 3px;
+}
+
+ul.breadcrumb li a {
+	color: #ccc;
+}
+
+ul.breadcrumb li a:hover {
+	color: #96ca2d;
+}
+
+ul.breadcrumb li span {
+	color: #669900;
+}
+
+
+/* Tab Styles
+----------------------------------------------------------------------------------------------------*/
+.tabs {
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+ul.idTabs li {
+	float: left;
+}
+
+ul.idTabs a {
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 30px;
+	padding: 0 10px;
+	margin: 1px;
+	margin-left: 0;
+	background: #96ca2d;
+}
+
+ul.idTabs a:hover {
+	color: #fff;
+	background: #669900;
+}
+
+ul.idTabs a.selected {
+	margin-bottom: 0;
+	color: #669900;
+	background: #e0ffb8;
+	border-bottom: 1px solid #e0ffb8;
+	cursor: pointer;
+}
+
+.tabs div.rhtab {
+	clear: left;
+	padding: 10px;
+	background: #e0ffb8;
+}
+
+
+/* Search Form
+----------------------------------------------------------------------------------------------------*/
+form.searchform {
+	width: 250px;
+	height: 289px;
+}
+
+fieldset {
+	width: 250px;
+	margin: 0 0 5px 0;
+}
+
+input, textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #666;
+	border: 0;
+}
+
+input.location {
+	float: left;
+	width: 242px;
+	height: 22px;
+	background: url(/site_media/static/images/bg_input_location.gif) 0 0 no-repeat;
+	padding: 8px 0 0 8px;
+}
+
+input.date {
+	float: right;
+	width: 132px;
+	height: 22px;
+	background: url(/site_media/static/images/bg_input_date.gif) 0 0 no-repeat;
+	padding: 8px 0 0 8px;
+}
+
+label.date {
+	float: left;
+	padding: 0 0 0 3px;
+	line-height: 30px;
+	color: #96ca2d;
+}
+
+input.check {
+	float: left;
+	margin: 10px 0 0 0;
+}
+
+label.check {
+	float: left;
+	margin: 10px 0 0 10px;
+}
+
+input.search {
+	float: right;
+	width: 90px;
+	height: 30px;
+	background: url(/site_media/static/images/search.gif) 0 0 no-repeat;
+	margin: 10px 0 0 0;
+}
+
+input.search:hover {
+	background-position: 0 -30px;
+}
+
+.rhtab {margin: 0; height:289px;}
+
+
+/* Tag Cloud
+----------------------------------------------------------------------------------------------------*/
+#cloud {margin:0; height:220px;}
+#cloud li {float:left; line-height:2.0em;}
+#cloud li a {display:block; padding: 0 0 0 5px; width:130px; font-size:14px; color:#96ca2d; font-weight:bold;}
+#cloud li a:hover {color:#669900;}
+
+
+/* Microformat
+----------------------------------------------------------------------------------------------------*/
+.vcard {
+	margin: 0 0 0 0;
+}
+
+a.url {
+	font-size: 14px;
+	color: #96ca2d;
+}
+
+.adr, .tel {
+	margin-bottom: 10px;
+}
+
+/* Feedback
+----------------------------------------------------------------------------------------------------*/
+
+#feedback {
+	float: left;
+}
+
+#feedback label {
+	float: left;
+	width: 100px;
+	color: #96ca2d;
+	margin-bottom: 5px;
+}
+#feedback label.error {
+	width: 100%;
+	text-align: center;
+	color: red;
+}
+
+#feedback input, #feedback textarea {
+	border: 1px solid #ccc;
+	padding: 3px;
+	margin-bottom: 10px;
+}
+
+#feedback input {
+	float: left;
+	width: 250px;
+}
+
+#feedback .submit {
+	float: left;
+	width: 90px;
+	height: 30px;
+	background: url(/site_media/static/images/submit.gif) 0 0 no-repeat;
+	margin: 0;
+}
+
+#feedback .submit:hover {
+	background-position: 0 -30px;
+}
+
+.notification_error {
+	background: red;
+	padding: 10px;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.notification_error div {
+	margin: 5px;
+}
+
+.notification_ok {
+	color: #96ca2d;
+	font-size: 14px;
+	font-weight: bold;
+}
+	
+
+/* Footer Styles
+----------------------------------------------------------------------------------------------------*/
+.footer, .footer a {
+	color: #fff;
+}
+
+.footer a:hover {
+	color: #669900;
+}
+
+.footer ul {
+	float: left;
+	margin-bottom: 20px;
+}
+
+.footer ul li {
+	display: inline;
+}
+
+.footer ul li a {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+/* MESSAGES */
+
+ul#messages {
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style: none;
+}
+ul#messages li {
+    padding: 5px 10px;
+    background: #EFD;
+    margin: 3px;
+    border: 1px solid #BC9;
+}
+ul#messages li a {
+    float: right;
+    color: #693;
+}
+
+/* PopupPage Styles
+---------------------------------------------------------------------------------------------------*/
+.olwidgetPopupPage a:active, .olwidgetPopupPage a:link, .olwidgetPopupPage a:visited {
+	text-decoration: none;
+	color: #5555DD;
+}
+
+.org {
+    font-size: 14px;
+    font-weight: bold;
+}

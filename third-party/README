@@ -1,0 +1,4 @@
+Some third-party code we'll be using that we've had to adapt / change ourselves:
+
+django-multilingual - a library providing support for multilingual content in
+Django models. Homepage here: http://code.google.com/p/django-multilingual/

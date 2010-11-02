@@ -1,0 +1,19 @@
+{% extends 'site_base.html' %}
+
+{% block head_title %}
+{% ifequal LANGUAGE_CODE 'en' %}
+{{ flatpage.title_en }}
+{% else %}
+{{ flatpage.title_it }}
+{% endifequal %}
+{% endblock %}
+
+{% block body_class %}transport{% endblock %}
+
+{% block body %}
+{% ifequal LANGUAGE_CODE 'en' %}
+{{ flatpage.content_en|safe }}
+{% else %}
+{{ flatpage.content_it|safe }}
+{% endifequal %}
+{% endblock %}

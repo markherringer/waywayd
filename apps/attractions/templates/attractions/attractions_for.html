@@ -1,0 +1,12 @@
+{% extends 'attractions/base.html' %}
+{% load attraction_tags %}
+
+{% block extra_head %}
+
+{{ olmap.media }}
+{% endblock %}
+
+{% block body %}
+{% cloud related_tags %}
+{{ olmap }}
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'attractions/base.html' %}
+{% load i18n %}
+
+{% block extra_head %}
+{{olmap.media}}
+{% endblock %}
+
+{% block body_class %}hotels{% endblock %}
+
+{% block body %}
+<h1>{{attraction}}</h1>
+{{attraction.render_cloud}}
+<form method='get' action="">
+    {% trans "Show Hotels within" %}
+    <input id="hotels_within" name="hotels_within"/>
+    {% trans 'kilometers' %}
+    <input type='submit' value='Go!'/>
+    <a href="{{request.path}}">Clear</a>
+</form>
+{{olmap}}
+<h2>Related Attractions</h2>
+{% for a in attraction.related_attractions %}
+<a href="{{a.get_absolute_url}}">{{ a.name }}</a>
+{% endfor %}
+{% endblock %}
+
+{% block extra_body %}
+<script>
+    $(function() {
+        $('input#hotels_within').val('{{request.GET.hotels_within}}');
+    });
+</script>
+{% endblock %}
+

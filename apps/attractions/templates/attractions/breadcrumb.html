@@ -1,0 +1,12 @@
+<!-- breadcrumb -->
+{% if nodes %}
+    <ul class="breadcrumb">
+    {% for x, y in nodes %}
+        {% if forloop.last and not forloop.first %}
+        <li><span>{{x}}</span></li>
+        {% else %}
+        <li><a href="{{y}}">{{x}}</a> &raquo;</li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+{% endif %}
